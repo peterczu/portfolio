@@ -171,7 +171,7 @@ export default function Home() {
                 </span>
 
                 <span className="text-xs text-slate-500">
-                  Featured Project
+                  Featured Project -  www.clearfastai.com
                 </span>
               </div>
 
@@ -398,39 +398,68 @@ export default function Home() {
 
       {/* Contact */}
       <section id="contact" className="border-t border-slate-800">
-        <div className="mx-auto max-w-6xl px-6 py-24">
-          <div className="rounded-3xl border border-slate-800 bg-slate-900 p-8 sm:p-12">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
-              Contact
-            </p>
+  <div className="mx-auto max-w-6xl px-6 py-24">
+    <div className="rounded-3xl border border-slate-800 bg-slate-900 p-8 sm:p-12">
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+        Contact
+      </p>
 
-            <h2 className="mt-4 max-w-2xl text-3xl font-bold sm:text-4xl">
-              Let's build something useful.
-            </h2>
+      <h2 className="mt-4 max-w-2xl text-3xl font-bold sm:text-4xl">
+        Let's build something useful.
+      </h2>
 
-            <p className="mt-5 max-w-xl leading-7 text-slate-400">
-              I'm open to cloud engineering, DevOps and technical
-              opportunities where I can build, learn and contribute.
-            </p>
+      <p className="mt-5 max-w-xl leading-7 text-slate-400">
+        I'm open to cloud engineering, DevOps, and technical
+        opportunities where I can build, learn, and contribute.
+      </p>
 
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <a
-                href="mailto:your-email@example.com"
-                className="rounded-lg bg-white px-6 py-3 text-center text-sm font-semibold text-slate-950 transition hover:bg-slate-200"
-              >
-                Email Me
-              </a>
+      {/* Action Buttons & Social Links Container */}
+      <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:items-center">
+        {/* Primary Action Buttons */}
+        <div className="flex flex-col gap-4 sm:flex-row">
+          <a
+            href="mailto:ipeterdevops@gmail.com"
+            className="rounded-lg bg-white px-6 py-3 text-center text-sm font-semibold text-slate-950 transition hover:bg-slate-200"
+          >
+            Email Me
+          </a>
 
-              <a
-                href="#projects"
-                className="rounded-lg border border-slate-700 px-6 py-3 text-center text-sm font-semibold text-white transition hover:border-slate-500"
-              >
-                View Projects
-              </a>
-            </div>
-          </div>
+          <a
+            href="#projects"
+            className="rounded-lg border border-slate-700 px-6 py-3 text-center text-sm font-semibold text-white transition hover:border-slate-500"
+          >
+            View Projects
+          </a>
         </div>
-      </section>
+
+        {/* Separator Line for Desktop Layout */}
+        <div className="hidden h-6 w-[1px] bg-slate-800 sm:block" />
+
+        {/* Social Profile Links */}
+        <div className="flex items-center justify-center gap-6">
+          <a
+            href="https://github.com/peterczu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-medium text-slate-400 transition hover:text-white"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/peter-madueke/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-medium text-slate-400 transition hover:text-white"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Footer */}
       <footer className="border-t border-slate-800">
